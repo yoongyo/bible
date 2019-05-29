@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f27d10b9-f2f1-46cb-b466-c9cb6ff2de9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ch1/mysite/settings/prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/mysite/settings/prod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/bible/templates/bible/bible_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/bible/templates/bible/bible_detail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +33,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="9" />
           <entry key="py" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="9" />
           <entry key="Python" value="48" />
         </counts>
       </usages-collector>
@@ -57,9 +59,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ch1/bible/templates/bible/bible_detail.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -108,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch1/mysite/settings/prod.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -147,6 +153,7 @@
         <option value="$PROJECT_DIR$/ch1/mysite/settings/__init__.py" />
         <option value="$PROJECT_DIR$/ch1/mysite/settings/common.py" />
         <option value="$PROJECT_DIR$/ch1/mysite/settings/prod.py" />
+        <option value="$PROJECT_DIR$/ch1/bible/templates/bible/bible_detail.html" />
       </list>
     </option>
   </component>
@@ -280,12 +287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch1/bible/templates/bible/bible_detail.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch1/bible/templates/bible/bible_list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ch1/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -328,6 +329,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch1/bible/templates/bible/bible_list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch1/bible/templates/bible/bible_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
