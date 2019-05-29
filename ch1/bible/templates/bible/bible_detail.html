@@ -13,6 +13,6 @@
     {% load static %}
     <body>
         <img src="{{ bible.image.url }}" width="100%">
-        {{ bible.content }}
+        {{ bible.content|safe }}
     </body>
 </html>
