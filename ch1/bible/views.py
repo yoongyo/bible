@@ -14,3 +14,8 @@ def bible_detail(request, pk):
     return render(request, 'bible/bible_detail.html', {
         'bible': bible
     })
+
+
+def shortcut(request):
+    return render(request, 'bible/shortcut.html')
+

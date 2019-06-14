@@ -3,7 +3,7 @@ from . models import Bible
 
 
 class BibleAdmin(admin.ModelAdmin):
-    list_display = ['name', 'image', 'mp3']
+    list_display = ['pk', 'name', 'image', 'mp3']
 
 
 admin.site.register(Bible, BibleAdmin)

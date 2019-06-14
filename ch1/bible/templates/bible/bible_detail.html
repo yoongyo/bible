@@ -1,18 +1,45 @@
-<!DOCTYPE html>
-<html lang="ko-kr">
-    <head>
-        <meta charset="utf-8">
-        <!-- 부트스트랩 모바일 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- 부트스트랩 -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
-    {% load static %}
-    <body>
-        <img src="{{ bible.image.url }}" width="100%">
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid mt-5">
+    <img class="mt-3" src="{{ bible.image.url }}" width="100%">
+    <div>
         {{ bible.content|safe }}
-    </body>
-</html>
+    </div>
+    <div class="row fixed-bottom mx-1 mb-2">
+        <div class="col-4 p-1">
+            <button type="button" onclick="play()" class="btn btn-default" style="width: 100%;background-color: rgb(215,215,215);">
+                <span id="play" class="text-center p-2">설명듣기</span>
+            </button>
+        </div>
+        <div class="col-4 p-1">
+            <button type="button" onclick="stop()" class="btn btn-default" style="width: 100%;background-color: rgb(215,215,215);">
+                <span class="text-center p-2">설명중지</span>
+            </button>
+        </div>
+        <div class="col-4 p-1">
+            <button type="button" onclick="location.href='{% url 'bible:shortcut' %}'" class="btn btn-default" style="width: 100%;background-color: rgb(215,215,215);">
+                <span class="text-center p-2">바로가기</span>
+            </button>
+        </div>
+    </div>
+    <audio id="audio" src="{{ bible.mp3.url }}"></audio>
+    <script>
+    function play() {
+        var audio = document.getElementById("audio");
+        var play = document.getElementById("play");
+        if (play.innerHTML == "일시정지"){
+            audio.pause();
+            play.innerHTML = "설명듣기";
+        }else{
+            audio.play();
+            play.innerHTML = "일시정지";
+        }
+    }
+    function stop() {
+        var audio = document.getElementById("audio");
+        audio.pause();
+        audio.currentTime = 0;
+    }
+    </script>
+</div>
+{% endblock %}
